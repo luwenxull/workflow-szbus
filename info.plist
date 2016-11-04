@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>luwenxull</string>
+	<string>com.ggoer.luwenxull.bus</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -17,11 +17,65 @@
 	<key>name</key>
 	<string>Suzhou Bus</string>
 	<key>objects</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>123</integer>
+				<key>keyword</key>
+				<string>szbus</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>拼命查询中~</string>
+				<key>script</key>
+				<string>/usr/local/bin/node &lt;&lt;-'CODE'
+require("./app")("{query}");
+CODE</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>请输入待查询公交</string>
+				<key>title</key>
+				<string>查询苏州公交到站信息</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B1A8B049-847C-4C63-8932-BF6F0640529A</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+	</array>
 	<key>readme</key>
 	<string>noreadme</string>
 	<key>uidata</key>
-	<dict/>
+	<dict>
+		<key>B1A8B049-847C-4C63-8932-BF6F0640529A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>160</integer>
+			<key>ypos</key>
+			<integer>90</integer>
+		</dict>
+	</dict>
 	<key>webaddress</key>
 	<string>ggoer.com</string>
 </dict>
